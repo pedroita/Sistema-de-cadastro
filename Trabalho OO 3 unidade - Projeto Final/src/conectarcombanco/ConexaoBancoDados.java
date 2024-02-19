@@ -9,9 +9,9 @@ public Connection getConnection() {
 		
 		try {
 			return DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/fichadosalunos","pedro","251288");
+					"jdbc:mysql://localhost:3306/fichadosalunos","","");
 		} catch (SQLException e) {
-			System.out.println("Problemas em estabelecer  coneção " + e.toString() );
+			System.out.println("Problemas em estabelecer  coneÃ§Ã£o " + e.toString() );
 		}
 		
 		return null;
