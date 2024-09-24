@@ -3,7 +3,59 @@
 Este projeto foi desenvolvido para a disciplina de **Programação Orientada a Objetos**, com foco na implementação de um sistema CRUD (Create, Read, Update, Delete) para o gerenciamento de alunos de um clube de natação. A aplicação utiliza uma interface gráfica desenvolvida com **Java Swing** e um banco de dados **MySQL** para armazenamento de informações.
 
 ---
+## Histórias de Usuário
 
+### História de Usuário 1: Registro de Alunos
+**Eu, como secretário**, desejo registrar novos alunos no sistema, fornecendo informações necessárias como nome, endereço, e-mail, turma e turno, para manter o cadastro atualizado.
+
+#### Critérios de Aceitação:
+- O sistema deve permitir a inserção de nome, endereço, e-mail, turma e turno.
+- O sistema deve exibir uma mensagem de confirmação após o cadastro bem-sucedido.
+- Os campos obrigatórios devem ser validados e não permitir o cadastro caso estejam vazios.
+
+### História de Usuário 2: Consulta de Alunos
+**Eu, como secretário**, desejo consultar a lista de alunos cadastrados, para visualizar suas informações detalhadas e verificar o cadastro.
+
+#### Critérios de Aceitação:
+- O sistema deve exibir uma tabela com todos os alunos cadastrados.
+- A tabela deve conter as colunas: nome, endereço, e-mail, turma e turno.
+- O sistema deve permitir a filtragem e ordenação dos registros.
+
+### História de Usuário 3: Atualização de Dados de Alunos
+**Eu, como secretário**, desejo atualizar as informações de um aluno, para garantir que os dados estejam corretos e atualizados.
+
+#### Critérios de Aceitação:
+- O sistema deve permitir selecionar um aluno na tabela e editar suas informações.
+- As mudanças devem ser salvas e uma mensagem de confirmação deve ser exibida após a atualização.
+
+### História de Usuário 4: Remoção de Alunos
+**Eu, como secretário**, desejo remover o registro de um aluno, para excluir os dados de alunos que não fazem mais parte do clube.
+
+#### Critérios de Aceitação:
+- O sistema deve permitir a remoção de um aluno selecionado na tabela.
+- Uma mensagem de confirmação deve ser exibida antes da remoção definitiva do aluno.
+- O aluno deve ser removido do banco de dados e da tabela após a confirmação.
+
+---
+## Casos de Uso
+
+### Caso de Uso 1: Registro de Alunos
+- **Ator**: Secretário
+- **Descrição**: O secretário deve registrar novos alunos no sistema, inserindo informações como nome, endereço, e-mail, turma e turno.
+
+### Caso de Uso 2: Consulta de Alunos
+- **Ator**: Secretário
+- **Descrição**: O secretário pode consultar a lista de alunos cadastrados, visualizando suas informações em uma tabela.
+
+### Caso de Uso 3: Atualização de Dados
+- **Ator**: Secretário
+- **Descrição**: O secretário pode atualizar os dados de um aluno, alterando informações conforme necessário.
+
+### Caso de Uso 4: Remoção de Alunos
+- **Ator**: Secretário
+- **Descrição**: O secretário pode remover alunos do sistema, excluindo seus registros.
+
+---
 ## Estrutura do Projeto:
 
 - **Pacote `cadastrodaluno`**:
@@ -89,3 +141,8 @@ VALUES ('João Silva', 'Rua das Flores, 123', 'joao.silva@email.com', 'Turma A',
 ## Considerações Finais:
 
 Este projeto é um exemplo de uma aplicação bem estruturada em Java com um fluxo CRUD para gerenciar o cadastro de alunos. A arquitetura modular, com separação de camadas de dados, lógica de negócios e interface gráfica, promove uma boa manutenção e extensibilidade do sistema.
+
+## Trabalhos de Melhorias para V1.2:
+
+- **Normalização dos Dados**: Implementar a normalização do banco de dados para eliminar redundâncias e melhorar a integridade dos dados. Isso pode incluir a criação de tabelas adicionais para armazenar informações relacionadas, como turmas e turnos, separando essas entidades da tabela principal de alunos.
+
