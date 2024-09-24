@@ -35,6 +35,45 @@ Este projeto foi desenvolvido para a disciplina de **Programação Orientada a O
 
 O sistema permite criar, visualizar, atualizar e deletar registros de alunos.
 
+## Configurações para Rodar o Sistema
+
+### 1. Configuração do Banco de Dados
+
+Antes de rodar o sistema, é necessário configurar o banco de dados MySQL. Siga as etapas abaixo:
+
+#### 1.1. Instalação do Conector MySQL
+
+Para que o Java possa se conectar ao MySQL, você precisará instalar o conector MySQL JDBC. Siga os passos abaixo:
+
+1. Baixe o conector MySQL JDBC [aqui](https://dev.mysql.com/downloads/connector/j/).
+2. Adicione o arquivo `.jar` do conector ao seu projeto Java, incluindo-o no classpath.
+
+#### 1.2. Criação do Banco de Dados e da Tabela
+
+Execute o seguinte código SQL no MySQL para criar o banco de dados e a tabela:
+
+```sql
+-- Criação do banco de dados
+CREATE DATABASE fichadosalunos;
+
+-- Seleciona o banco de dados criado
+USE fichadosalunos;
+
+-- Criação da tabela dadosaluno
+CREATE TABLE dadosaluno (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    turma VARCHAR(50) NOT NULL,
+    turno VARCHAR(50) NOT NULL
+);
+
+-- Exemplo de inserção de dados
+INSERT INTO dadosaluno (nome, endereco, email, turma, turno)
+VALUES ('João Silva', 'Rua das Flores, 123', 'joao.silva@email.com', 'Turma A', 'Manhã');
+```
+
 ## Tecnologias Utilizadas:
 
 - **Java**: Linguagem principal usada para implementar a lógica do sistema.
