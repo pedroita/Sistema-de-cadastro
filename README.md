@@ -31,3 +31,22 @@ Este projeto foi desenvolvido para a disciplina de **Programação Orientada a O
   - **`TelaCadastro.java`**: Implementa a interface de cadastro de novos alunos.
 
 ---
+## Funcionalidade CRUD:
+
+O sistema permite criar, visualizar, atualizar e deletar registros de alunos.
+
+## Tecnologias Utilizadas:
+
+- **Java**: Linguagem principal usada para implementar a lógica do sistema.
+- **Java Swing**: Usado para criar a **GUI** (Graphical User Interface).
+- **JDBC**: Conector utilizado para a comunicação com o banco de dados MySQL.
+- **MySQL**: Sistema de banco de dados para persistir os dados dos alunos.
+
+## Padrões de Design e Boas Práticas:
+
+- **POO (Programação Orientada a Objetos)**: Utilizado para encapsulamento de dados e separação de responsabilidades.
+- **DAO (Data Access Object)**: Implementação para isolar a lógica de acesso aos dados.
+
+## Considerações Finais:
+
+Este projeto é um exemplo de uma aplicação bem estruturada em Java com um fluxo CRUD para gerenciar o cadastro de alunos. A arquitetura modular, com separação de camadas de dados, lógica de negócios e interface gráfica, promove uma boa manutenção e extensibilidade do sistema.
