@@ -1,2 +1,33 @@
-# Cadastro de clientes de um clube de natação
-### Essa aplicação foi desenvolvida para a disciplina de Programação Orientada a Objetos. Ela é um CRUD( Create, Read, Update, Delete), as tecnologias que foram ultilizadas nela foram : Java Swing, para criar uma GUI (Graphical User Interface) onde o usuario poderia facilmente interagir com o sistema. Os dados dessa aplicação eram salvo em um banco de dados, nesse projeto resolvi ultilizar MySql.
+# Cadastro de Clientes de um Clube de Natação
+
+Este projeto foi desenvolvido para a disciplina de **Programação Orientada a Objetos**, com foco na implementação de um sistema CRUD (Create, Read, Update, Delete) para o gerenciamento de alunos de um clube de natação. A aplicação utiliza uma interface gráfica desenvolvida com **Java Swing** e um banco de dados **MySQL** para armazenamento de informações.
+
+---
+
+## Estrutura do Projeto:
+
+- **Pacote `cadastrodaluno`**:
+  - **`CadastroAluno.java`**: Implementa a lógica de cadastro de novos alunos no sistema.
+
+- **Pacote `conectarcombanco`**:
+  - **`ConexaoBancoDados.java`**: Responsável pela configuração e gerenciamento da conexão com o banco de dados MySQL utilizando JDBC.
+
+- **Pacote `fichaaluno`**:
+  - **`Alunos.java`**: Representa a classe **Aluno**, que define o modelo dos dados de um aluno.
+
+- **Pacote `interfaces`**:
+  - **`DAO.java`**: Interface para **Data Access Object (DAO)**, definindo os métodos principais para interagir com o banco de dados (adicionar, atualizar, buscar, remover).
+
+- **Pacote `janelaTabela`**:
+  - **`JanelaTable.java`**: Implementa a interface da tabela onde os dados dos alunos são exibidos.
+
+- **Pacote `modelotabelaaluno`**:
+  - **`AlunoTableModel.java`**: Fornece o modelo para a tabela de alunos, estendendo `AbstractTableModel`.
+
+- **Pacote `principal`**:
+  - **`Main.java`**: Classe principal que inicializa o sistema e carrega a interface gráfica da aplicação.
+
+- **Pacote `telacadastro`**:
+  - **`TelaCadastro.java`**: Implementa a interface de cadastro de novos alunos.
+
+---
